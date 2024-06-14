@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Analysis Results</title>
+</head>
+<body>
+    <h2>CSV Analysis Results</h2>
+
+    <h3>Data Preview</h3>
+    {{ preview|safe }}
+
+    <h3>Summary Statistics</h3>
+    {{ summary|safe }}
+
+    <h3>Histograms</h3>
+    {% for col, path in histograms.items %}
+        <h4>{{ col }}</h4>
+        <img src="{{ path }}" alt="Histogram for {{ col }}">
+    {% endfor %}
+</body>
+</html>
+</html>

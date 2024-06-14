@@ -24,10 +24,12 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 Install dependencies:
-pip install -r requirements.txt
-python manage.py migrate
+`pip install -r requirements.txt`
+`python manage.py migrate`
+
 
 Run the development server:
-python manage.py runserver
+`python manage.py runserver`
 
-Open your web browser and navigate to http://127.0.0.1:8000/.
+
+Open your web browser and navigate to  `http://127.0.0.1:8000/`.
